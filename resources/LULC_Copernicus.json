@@ -1,0 +1,94 @@
+[
+    {
+        "Value": 0,
+        "Landuse": "RNGB"
+    },
+    {
+        "Value": 20,
+        "Landuse": "SHRB"
+    },
+    {
+        "Value": 30,
+        "Landuse": "PAST"
+    },
+    {
+        "Value": 40,
+        "Landuse": "AGRL"
+    },
+    {
+        "Value": 50,
+        "Landuse": "URHD"
+    },
+    {
+        "Value": 60,
+        "Landuse": "BSVG"
+    },
+    {
+        "Value": 70,
+        "Landuse": "WATR"
+    },
+    {
+        "Value": 80,
+        "Landuse": "WATR"
+    },
+    {
+        "Value": 90,
+        "Landuse": "WETL"
+    },
+    {
+        "Value": 100,
+        "Landuse": "RNGE"
+    },
+    {
+        "Value": 111,
+        "Landuse": "FRSE"
+    },
+    {
+        "Value": 112,
+        "Landuse": "FRSE"
+    },
+    {
+        "Value": 113,
+        "Landuse": "FRSD"
+    },
+    {
+        "Value": 114,
+        "Landuse": "FRSD"
+    },
+    {
+        "Value": 115,
+        "Landuse": "FRST"
+    },
+    {
+        "Value": 116,
+        "Landuse": "FRST"
+    },
+    {
+        "Value": 121,
+        "Landuse": "RNGB"
+    },
+    {
+        "Value": 122,
+        "Landuse": "RNGB"
+    },
+    {
+        "Value": 123,
+        "Landuse": "RNGB"
+    },
+    {
+        "Value": 124,
+        "Landuse": "RNGB"
+    },
+    {
+        "Value": 125,
+        "Landuse": "FRST"
+    },
+    {
+        "Value": 126,
+        "Landuse": "FRST"
+    },
+    {
+        "Value": 200,
+        "Landuse": "WATR"
+    }
+]

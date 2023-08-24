@@ -1,0 +1,7 @@
+# Ignore folders
+\.settings
+
+# Ignore files
+.project
+.pydevproject
+*.bat

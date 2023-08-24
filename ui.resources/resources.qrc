@@ -1,0 +1,21 @@
+<RCC>
+ <qresource prefix="imgMapSWAT">
+	<file>../images/icon.png</file>
+	<file>../images/icon2.png</file>
+ 	<file>../images/info2.png</file>
+	<file>../images/point.png</file>
+	<file>../images/basemap.png</file>
+	<file>../images/ee.png</file>
+	<file>../images/world.png</file>
+	<file>../images/shape.png</file>
+	<file>../images/upload.png</file>
+	<file>../images/add.png</file>	
+	<file>../images/coffee.png</file>
+	<file>../images/close.png</file>
+	<file>../images/arrow.png</file>
+	<file>../images/buffer2.png</file>
+	<file>../images/puzzle.png</file>
+	<file>../images/MapSWAT_GEE.png</file>
+	<file>../images/MapSWAT_v3.png</file>				
+ </qresource>
+ </RCC>
