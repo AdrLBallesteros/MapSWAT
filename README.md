@@ -7,7 +7,6 @@
 </h1>
 
 <h4 align="center">MapSWAT is a QGIS plugin for preparing QSWAT or QSWAT+ input maps</a>.</h4>
-<<<<<<< Updated upstream
 
 <p align="center">
   <a href="#installation">Installation</a> •
@@ -21,11 +20,18 @@
 ## Installation
 
 ### Download
+
 * You can download [here](https://github.com/AdrLBallesteros/MapSWAT/releases) the latest installable version of MapSWAT for Windows.
+
 ### Initial Setup
+
 *	Before installing the MapSWAT plugin, it is necessary to download and install [QGIS 3.x](https://www.qgis.org/en/site/index.html). It is recommended to use the long-term release version.
-*	Launch a QGIS 3 project, navigate to Plugins > Manage and Install Plugins > All, and then search for "Google Earth Engine"
-![screenshot]()
+
+*	Launch a **QGIS 3 project**, navigate to **Plugins > Manage and Install Plugins > All**, and then search for **"Google Earth Engine"**
+<p align="center">
+<img src="resources/gifs/Install-GEE.gif" alt="screenshot" width="700">
+</p>
+*	After installing the GEE plugin for the first time, you will see the following message. Users must register for a GEE account.
   
 ## Key Features
 
@@ -36,5 +42,4 @@
 ## Contact
 
 ## Support
-=======
->>>>>>> Stashed changes
+
