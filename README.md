@@ -56,27 +56,42 @@
 1.	Click on the MapSWAT button of the QGIS toolbar to open the MapSWAT plugin. You will be prompted to select the version of MapSWAT you want to use.
 
 <p align="center">
-<img src="resources/images/1.png" alt="1" width="300">
+<img src="resources/images/1.PNG" alt="1" width="300">
 </p>
 
 > **MapSWAT v3.0**: This is the standard version of MapSWAT. Users can import their own raster maps and prepare them in QSWAT or QSWAT+ format.
 
 > **MapSWAT GEE**: This is the connected to [Google Earth Engine (GEE)](https://earthengine.google.com/) version of MapSWAT. Users must first sign up for a GEE account and install the GEE plugin from QGIS repository.
 
-2.  Before going to the selected MapSWAT window, users also have to indicate a path to save the MapSWAT folder.
+2.  Before going to the selected MapSWAT version, users also have to indicate a path to save the MapSWAT folder.
 
 <p align="center">
-<img src="resources/images/3.png" alt="3" width="300">
+<img src="resources/images/3.PNG" alt="3" width="300">
 </p>
 
 3.  Both versions are structured in the same way.
 
 <p align="center">
-<img src="resources/images/4-standard.png" alt="4-standard" width="300" style="display:inline-block">
-<img src="resources/images/5-GEE.png" alt="5-GEE" width="300" style="display:inline-block">
+<img src="resources/images/4-standard.PNG" alt="4-standard" width="500" style="display:inline-block">
+<img src="resources/images/5-GEE.PNG" alt="5-GEE" width="507" style="display:inline-block">
 </p>
    
-4.  In the first step users can insert or select raster layers such as, a digital elevation map (DEM), a land use map (LANDUSE) and a soil map (SOIL). To do so, users must first tick the box for each SWAT input map they want to obtain.
+4.  In the first part of the MapSWAT window, users can insert or select the raster layers such as, a **digital elevation map (DEM)**, a **land use map (LANDUSE)** and a **soil map (SOIL)**. Remember to tick the box of the SWAT input map you want to obtain.
+
+> Before moving on to the next part, users can also introduce an outlet point coordinates to easily locate the study area in the map canvas. This will unlock additional options such as **BUFFER CLIP** or **AUTOBASIN CLIP**.
+
+<p align="center">
+<img src="resources/gifs/Standard_Example_Part1.gif" alt="screenshot" width="500" style="display:inline-block">
+<img src="resources/gifs/GEE_Example_Part1.gif" alt="screenshot" width="507" style="display:inline-block">
+</p>
+
+5.  When previous steps have been done, users have to click on ADD LAYERS or GET MAPS to activate the following part of the MapSWAT plugin.
+
+> Additionally, a **MERGE DEMs** option has been included in the standard version of MapSWAT. To use it, user must click on the MERGE DEMs button, select the DEM layers (.tif) to merge and click on the OPEN button.
+
+<p align="center">
+<img src="resources/gifs/Merge_DEMs.gif" alt="screenshot" width="500">
+</p>
 
 ## Credits
 
