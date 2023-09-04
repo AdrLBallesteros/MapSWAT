@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a><img src="images/MapSWAT_v3.png" alt="MapSWAT" width="200"></a>
+  <a><img src="resources/images/MapSWAT.svg" alt="MapSWAT" width="200"></a>
   <br>
   MapSWAT
   <br>
