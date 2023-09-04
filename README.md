@@ -7,6 +7,7 @@
 </h1>
 
 <h4 align="center">MapSWAT is a QGIS plugin for preparing QSWAT or QSWAT+ input maps</a>.</h4>
+<<<<<<< Updated upstream
 
 <p align="center">
   <a href="#installation">Installation</a> •
@@ -35,3 +36,5 @@
 ## Contact
 
 ## Support
+=======
+>>>>>>> Stashed changes
