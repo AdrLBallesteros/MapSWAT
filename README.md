@@ -27,11 +27,21 @@
 
 *	Before installing the MapSWAT plugin, it is necessary to download and install [QGIS 3.x](https://www.qgis.org/en/site/index.html). It is recommended to use the long-term release version.
 
-*	Launch a **QGIS 3 project**, navigate to **Plugins > Manage and Install Plugins > All**, and then search for **"Google Earth Engine"**
+*	Launch a **QGIS 3 project**, navigate to **Plugins > Manage and Install Plugins > All**, and then search for **"Google Earth Engine" (GEE)**
 <p align="center">
 <img src="resources/gifs/Install-GEE.gif" alt="screenshot" width="700">
 </p>
+
 *	After installing the GEE plugin for the first time, you will see the following message. Users must register for a GEE account.
+<p align="center">
+<img src="resources/images/MapSWAT.svg" alt="message" width="100">
+</p>
+
+* The **MapSWAT plugin** can now be installed. Launch the [executable](https://github.com/AdrLBallesteros/MapSWAT/releases) and activate the MapSWAT plugin from QGIS repository.
+<p align="center">
+<img src="resources/gifs/Install_MapSWAT.gif" alt="screenshot" width="700">
+<img src="resources/gifs/Activate_MapSWAT.gif" alt="screenshot" width="700">
+</p>
   
 ## Key Features
 
