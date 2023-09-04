@@ -21,13 +21,13 @@
 
 ### Download
 
-* You can download [here](https://github.com/AdrLBallesteros/MapSWAT/releases) the latest installable version of MapSWAT for Windows.
+* You can download [**here**](https://github.com/AdrLBallesteros/MapSWAT/releases) the latest installable version of MapSWAT for Windows.
 
 ### Initial Setup
 
-*	Before installing the MapSWAT plugin, it is necessary to download and install [QGIS 3.x](https://www.qgis.org/en/site/index.html). It is recommended to use the long-term release version.
+*	Before installing the MapSWAT plugin, it is necessary to download and install [**QGIS 3.x**](https://www.qgis.org/en/site/index.html). It is recommended to use the long-term release version.
 
-*	Launch a **QGIS 3 project**, navigate to **Plugins > Manage and Install Plugins > All**, and then search for **"Google Earth Engine" (GEE)**
+*	Launch a **QGIS 3 project**, navigate to **Plugins > Manage and Install Plugins > All**, and then search for [**"Google Earth Engine" (GEE)**](https://github.com/gee-community/qgis-earthengine-plugin)
 <p align="center">
 <img src="resources/gifs/Install-GEE.gif" alt="screenshot" width="700">
 </p>
