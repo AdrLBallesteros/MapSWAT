@@ -38,7 +38,7 @@
 <img src="resources/gifs/Activate_MapSWAT.gif" alt="screenshot" width="500" style="display:inline-block">
 </p>
 
-*	After activating the **MapSWAT plugin** for the first time, you will see the following message. Users must register for a GEE account.
+*	After activating the **MapSWAT plugin** for the first time, you will see the following message. **Users must register for a GEE account**.
 <p align="center">
 <img src="resources/images/msg.png" alt="message" width="400">
 </p>
@@ -126,7 +126,7 @@
 <img src="resources/gifs/SWAT_Input_Maps.gif" alt="SWAT_Input_Maps.gif" width="500">
 </p>
    
-> **The target CRS needs to be a metric CRS**, for example UTM.
+> The **target CRS needs to be a metric CRS**, for example UTM.
 
 8.  Now, the created raster layers **(“DEM”, “LANDUSE” and “SOIL”)** can be found in the QGIS canvas.
 
