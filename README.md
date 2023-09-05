@@ -81,17 +81,70 @@
 > Before moving on to the next part, users can also introduce an outlet point coordinates to easily locate the study area in the map canvas. This will unlock additional options such as **BUFFER CLIP** or **AUTOBASIN CLIP**.
 
 <p align="center">
-<img src="resources/gifs/Standard_Example_Part1.gif" alt="screenshot" width="500" style="display:inline-block">
-<img src="resources/gifs/GEE_Example_Part1.gif" alt="screenshot" width="507" style="display:inline-block">
+<img src="resources/gifs/Standard_Example_Part1.gif" alt="Standard_Example_Part1.gif" width="500" style="display:inline-block">
+<img src="resources/gifs/GEE_Example_Part1.gif" alt="GEE_Example_Part1.gif" width="507" style="display:inline-block">
 </p>
 
-5.  When previous steps have been done, users have to click on ADD LAYERS or GET MAPS to activate the following part of the MapSWAT plugin.
+5.  When previous steps have been done, users have to click on **ADD LAYERS** or **GET MAPS** to activate the following part of the MapSWAT plugin.
 
 > Additionally, a **MERGE DEMs** option has been included in the standard version of MapSWAT. To use it, user must click on the MERGE DEMs button, select the DEM layers (.tif) to merge and click on the OPEN button.
 
 <p align="center">
-<img src="resources/gifs/Merge_DEMs.gif" alt="screenshot" width="500">
+<img src="resources/gifs/Merge_DEMs.gif" alt="Merge_DEMs" width="500">
 </p>
+
+6.  **CLIPPING OPTIONS**: MapSWAT includes several options for clipping raster layers.
+  * **MANUAL CLIP**: Allows users to manually draw an extraction mask (POLYGON).
+  
+<p align="center">
+<img src="resources/gifs/Manual_clip.gif" alt="Manual_clip.gif" width="500">
+</p>
+
+> After drawing the extraction mask, right-click the mouse and a window for indicating the FID number will appear. Set any number, for example 1, and click the **OK button**.
+
+  * **SHAPEFILE CLIP**: Allows users to select any shapefile as an extraction mask (POLYGON).
+  
+<p align="center">
+<img src="resources/gifs/Shapefile_clip.gif" alt="Shapefile_clip.gif" width="500">
+</p>
+
+  * **BUFFER CLIP**:  With this option, an extraction mask (POLYGON) is automatically created around the outlet point. To do so, users have to indicate the buffer distance in kilometers (10 Km by default).
+  
+<p align="center">
+<img src="resources/gifs/Buffer_clip.gif" alt="Buffer_clip.gif" width="500">
+</p>
+
+ * **AUTOBASIN CLIP**:  This option is **only available in the GEE version**, a predefined basin is obtained from [HydroSHEDS Basins](https://www.hydrosheds.org/products/hydrobasins) to be used as an extraction mask (POLYGON).
+  
+<p align="center">
+<img src="resources/gifs/Autobasin_clip.gif" alt="Autobasin_clip.gif" width="500">
+</p>
+
+7. **SWAT INPUT MAPS CRS**:  This is the last part of the MapSWAT window, in this step users have to indicate a target CRS to reproject all generated maps.
+
+<p align="center">
+<img src="resources/gifs/SWAT_Input_Maps.gif" alt="SWAT_Input_Maps.gif" width="500">
+</p>
+   
+> **The target CRS needs to be a metric CRS**, for example UTM.
+
+8.  Now, the created raster layers **(“DEM”, “LANDUSE” and “SOIL”)** can be found in the QGIS canvas.
+
+<p align="center">
+<img src="resources/images/6.PNG" alt="6.PNG" width="700">
+</p>
+
+> Additionally, for the LANDUSE and SOIL input maps a template of their **LOOKUP tables** is automatically created. 
+
+<p align="center">
+<img src="resources/images/7.PNG" alt="7.PNG" width="300">
+</p>
+
+9.  When closing, a warning window is displayed to remind users that the QGIS canvas will be cleared and all uploaded files will disappear.
+
+<p align="center">
+<img src="resources/gifs/Closing.gif" alt="Closing.gif" width="650">
+</p>   
 
 ## Credits
 
@@ -109,6 +162,6 @@ If you have feedback or suggestions, please contact me at **alopez6@ucam.edu**.
 If you find this plugin useful, or if it has saved you time in your work, consider supporting it by inviting me for a coffee. Thanks! 😊
 
 <p align="center">
-<a href="https://www.buymeacoffee.com/alopez6" target="_blank"><img src="images/coffee.png" alt="Buy Me A Coffee" width="200"></a>
+<a href="https://www.buymeacoffee.com/alopez6" target="_blank"><img src="resources/images/white-button.png" alt="Buy Me A Coffee" width="120"></a>
 </p>
 
