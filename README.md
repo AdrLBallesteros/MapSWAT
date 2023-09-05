@@ -32,17 +32,17 @@
 <img src="resources/gifs/Install-GEE.gif" alt="screenshot" width="700">
 </p>
 
-*	After installing the GEE plugin for the first time, you will see the following message. Users must register for a GEE account.
-<p align="center">
-<img src="resources/images/msg.png" alt="message" width="300">
-</p>
-
 * The **MapSWAT plugin** can now be installed. Launch the [executable](https://github.com/AdrLBallesteros/MapSWAT/releases) and activate the MapSWAT plugin from QGIS repository.
 <p align="center">
 <img src="resources/gifs/Install_MapSWAT.gif" alt="screenshot" width="500" style="display:inline-block">
 <img src="resources/gifs/Activate_MapSWAT.gif" alt="screenshot" width="500" style="display:inline-block">
 </p>
-  
+
+*	After activating the **MapSWAT plugin** for the first time, you will see the following message. Users must register for a GEE account.
+<p align="center">
+<img src="resources/images/msg.png" alt="message" width="400">
+</p>
+
 ## Key Points
 
 * MapSWAT is a single-use program, which means that when the program is closed all generated files will be deleted from QGIS canvas. However, all files will be still available in the MapSWAT folder.
@@ -162,6 +162,6 @@ If you have feedback or suggestions, please contact me at **alopez6@ucam.edu**.
 If you find this plugin useful, or if it has saved you time in your work, consider supporting it by inviting me for a coffee. Thanks! 😊
 
 <p align="center">
-<a href="https://www.buymeacoffee.com/alopez6" target="_blank"><img src="resources/images/white-button.png" alt="Buy Me A Coffee" width="120"></a>
+<a href="https://www.buymeacoffee.com/alopez6" target="_blank"><img src="resources/images/yellow-button.png" alt="Buy Me A Coffee" width="120"></a>
 </p>
 
