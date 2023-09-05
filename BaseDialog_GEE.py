@@ -62,23 +62,7 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
         self.plugin_dir = os.path.dirname(os.path.abspath(__file__))
         
         self.polygon = None
-        
-        #Connect to GEE
-        try: 
-            test = ee.String('<b>*Successfully connected to Google Earth Engine (GEE)*</b>').getInfo()
-            msg1 = QMessageBox()
-            msg1.setWindowIcon(QIcon(":/imgMapSWAT/images/icon.png"))
-            msg1.setIconPixmap(QtGui.QPixmap(":/imgMapSWAT/images/ee.png"))
-            msg1.setWindowTitle("MapSWAT GEE")
-            msg1.setText('<div align="center">' + test + '</div>')
-            msg1.setStandardButtons(QMessageBox.Ok)
-            msg1.exec_()
-            
-        except:
-            QMessageBox.warning(None, "GEE connection failure", "Please, install the QGIS Google Earth Engine plugin before proceeding.")
-            self.close()
-             
-                
+
         #Activate CRS selector and change default info.
         self.mQgsProjection_Outlet.setOptionVisible(self.mQgsProjection_Outlet.CrsNotSet,True)
         self.mQgsProjection_Outlet.setNotSetText('Select (X, Y) CRS')
@@ -100,7 +84,15 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
         WGS84 = QgsCoordinateReferenceSystem(3857)
         QgsProject.instance().setCrs(WGS84)
 
-        
+        #Connect to GEE
+        test = ee.String('<b>*Successfully connected to Google Earth Engine (GEE)*</b>').getInfo()
+        msg1 = QMessageBox()
+        msg1.setWindowIcon(QIcon(":/imgMapSWAT/images/icon.png"))
+        msg1.setIconPixmap(QtGui.QPixmap(":/imgMapSWAT/images/ee.png"))
+        msg1.setWindowTitle("MapSWAT GEE")
+        msg1.setText('<div align="center">' + test + '</div>')
+        msg1.setStandardButtons(QMessageBox.Ok)
+        msg1.exec_()     
 
     def InitialWindow(self):
         
@@ -1007,18 +999,18 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
 
         if reply == QMessageBox.Yes:          
 
-            #Eliminar capas del CANVAS
+            #Clear CANVAS
             QgsProject.instance().removeAllMapLayers()
             self.canvas.refresh()
             
-            #Cerrar plugin
+            #Close plugin
             self.close()
 
         else:
             pass
         
     def info(self):
-        text = "<b>MapSWAT</b> is a QGIS plugin for preparing QSWAT or QSWAT+ input maps.<br><br>User manual and research paper (in progress).<br><br>If you have feedback or suggestions, please contact us at <b>alopez6@ucam.edu</b>. <br><br>If you find this plugin useful, or if it has saved you time in your work, consider supporting it by inviting me for a coffee. Thanks 😊"
+        text = "<b>MapSWAT</b> is a QGIS plugin for preparing QSWAT or QSWAT+ input maps.<br><br><b>User manual</b>: https://adrlballesteros.github.io/MapSWAT/ <br><br><b>Research paper</b>: (in progress).<br><br>If you have feedback or suggestions, please contact me at <b>alopez6@ucam.edu</b>. <br><br>If you find this plugin useful, or if it has saved you time in your work, consider supporting it by inviting me for a coffee. Thanks 😊"
         msgINFO = QMessageBox()
         msgINFO.setWindowIcon(QIcon(":/imgMapSWAT/images/icon.png"))
         msgINFO.setWindowTitle("Help & About")

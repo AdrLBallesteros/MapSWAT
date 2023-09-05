@@ -113,13 +113,23 @@ class BaseDialog(QDialog, Ui_BaseDialog):
         
         #Open MapSWAT GEE window    
         elif msg2.clickedButton() == Button_GEE:
+            
+            try:
+                self.GEE = BaseDialog_GEE(self.iface)
+                self.GEE.setWindowFlags(Qt.WindowSystemMenuHint | Qt.MSWindowsFixedSizeDialogHint | Qt.WindowTitleHint | Qt.WindowMinimizeButtonHint)
+                #self.GEE.show()
+                #self.GEE.exec_()
+                # Call a function of the other class
+                self.GEE.InitialWindow()
+                
+            except:
+                fail = QMessageBox.warning(None, "CONNECTION PROBLEM", "Connection failed, please check that you have been authenticated correctly in Google Earth Engine (GEE) and have a good internet service.", QMessageBox.Ok)
         
-            self.GEE = BaseDialog_GEE(self.iface)
-            self.GEE.setWindowFlags(Qt.WindowSystemMenuHint | Qt.MSWindowsFixedSizeDialogHint | Qt.WindowTitleHint | Qt.WindowMinimizeButtonHint)
-            #self.GEE.show()
-            #self.GEE.exec_()
-            # Call a function of the other class
-            self.GEE.InitialWindow()
+                if fail == QMessageBox.Ok:          
+                    self.close()
+                    
+                else:
+                    self.close() 
 
 
     def InitialWindow(self):
@@ -878,7 +888,7 @@ class BaseDialog(QDialog, Ui_BaseDialog):
         
     def info(self):
         
-        text = "<b>MapSWAT</b> is a QGIS plugin for preparing QSWAT or QSWAT+ input maps.<br><br>User manual and research paper (in progress).<br><br>If you have feedback or suggestions, please contact us at <b>alopez6@ucam.edu</b>. <br><br>If you find this plugin useful, or if it has saved you time in your work, consider supporting it by inviting me for a coffee. Thanks 😊"
+        text = "<b>MapSWAT</b> is a QGIS plugin for preparing QSWAT or QSWAT+ input maps.<br><br><b>User manual</b>: https://adrlballesteros.github.io/MapSWAT/ <br><br><b>Research paper</b>: (in progress).<br><br>If you have feedback or suggestions, please contact me at <b>alopez6@ucam.edu</b>. <br><br>If you find this plugin useful, or if it has saved you time in your work, consider supporting it by inviting me for a coffee. Thanks 😊"
         msgINFO = QMessageBox()
         msgINFO.setWindowIcon(QIcon(":/imgMapSWAT/images/icon.png"))
         msgINFO.setWindowTitle("Help & About")
