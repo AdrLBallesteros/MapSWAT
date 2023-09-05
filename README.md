@@ -29,7 +29,7 @@
 
 *	Launch a **QGIS 3 project**, navigate to **Plugins > Manage and Install Plugins > All**, and then search for [**"Google Earth Engine" plugin**](https://github.com/gee-community/qgis-earthengine-plugin).
 <p align="center">
-<img src="resources/gifs/Install-GEE.gif" alt="screenshot" width="700" style="border: 1px solid black;">
+<img src="resources/gifs/Install-GEE.gif" alt="screenshot" width="700">
 </p>
 
 *	After installing the GEE plugin for the first time, you will see the following message. Users must register for a GEE account.
@@ -39,8 +39,8 @@
 
 * The **MapSWAT plugin** can now be installed. Launch the [executable](https://github.com/AdrLBallesteros/MapSWAT/releases) and activate the MapSWAT plugin from QGIS repository.
 <p align="center">
-<img src="resources/gifs/Install_MapSWAT.gif" alt="screenshot" width="500" style="border: 1px solid black; display:inline-block">
-<img src="resources/gifs/Activate_MapSWAT.gif" alt="screenshot" width="500" style="border: 1px solid black; display:inline-block">
+<img src="resources/gifs/Install_MapSWAT.gif" alt="screenshot" width="500" style="display:inline-block">
+<img src="resources/gifs/Activate_MapSWAT.gif" alt="screenshot" width="500" style="display:inline-block">
 </p>
   
 ## Key Points
@@ -77,7 +77,7 @@
 </p>
    
 4.  In the first part of the MapSWAT window, users can insert or select the raster layers such as, a **digital elevation map (DEM)**, a **land use map (LANDUSE)** and a **soil map (SOIL)**. Remember to tick the box of the SWAT input map you want to obtain.
-
+   
 > Before moving on to the next part, users can also introduce an outlet point coordinates to easily locate the study area in the map canvas. This will unlock additional options such as **BUFFER CLIP** or **AUTOBASIN CLIP**.
 
 <p align="center">
