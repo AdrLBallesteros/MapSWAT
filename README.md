@@ -38,18 +38,18 @@
 
 *	Before installing the MapSWAT plugin, it is necessary to download and install [**QGIS 3.x**](https://www.qgis.org/en/site/index.html). It is recommended to use the long-term release version.
 
-*	Launch a **QGIS 3 project**, navigate to **Plugins > Manage and Install Plugins > All**, and then search for [**"Google Earth Engine" plugin**](https://github.com/gee-community/qgis-earthengine-plugin).
+*	Launch a **QGIS 3 project**, navigate to **Plugins > Manage and Install Plugins > All**, and then search for [**"Google Earth Engine"**](https://github.com/gee-community/qgis-earthengine-plugin) plugin.
 <p align="center">
 <img src="resources/gifs/Install-GEE.gif" alt="screenshot" width="700">
 </p>
 
-* The **MapSWAT plugin** can now be installed. Launch the [executable](https://github.com/AdrLBallesteros/MapSWAT/releases) and activate the MapSWAT plugin from QGIS repository.
+* The **MapSWAT** can now be installed. Launch the downloaded [MapSWAT executable](https://github.com/AdrLBallesteros/MapSWAT/releases), reboot the QGIS program and then activate the MapSWAT plugin from QGIS repository (**Plugins > Manage and Install Plugins > Installed**).
 <p align="center">
-<img src="resources/gifs/Install_MapSWAT.gif" alt="screenshot" width="500" style="display:inline-block">
-<img src="resources/gifs/Activate_MapSWAT.gif" alt="screenshot" width="500" style="display:inline-block">
+<img src="resources/gifs/Install_MapSWAT.gif" alt="screenshot" width="600" style="display:inline-block">
+<img src="resources/gifs/Activate_MapSWAT.gif" alt="screenshot" width="600" style="display:inline-block">
 </p>
 
-*	After activating the **MapSWAT plugin** for the first time, you will see the following message. **Users must register for a GEE account**.
+*	After activating the **MapSWAT plugin** for the first time, you will see the following message. **Users must register for a Google Earth Engine (GEE) account**. If an error occurs during this step, be patient and start again. It usually works in the end.
 <p align="center">
 <img src="resources/images/msg.png" alt="message" width="400">
 </p>
@@ -60,7 +60,7 @@
   
 * MapSWAT will only create the selected input maps, so remember to tick the box for each input map to generate them.
   
-* If a python error appears during the use of MapSWAT, it is recommended to reboot the QGIS program to fix it. If it continues to be displayed, please  <a href="#contact">contact me</a>.
+* If a python error appears during the use of MapSWAT, it is recommended to reboot the QGIS program to fix it. If it continues, please  <a href="#contact">contact me</a>.
 
 ## How To Use
 
