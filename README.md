@@ -148,7 +148,7 @@
 > Additionally, for the LANDUSE and SOIL input maps a template of their **LOOKUP tables** is automatically created. 
 
 <p align="center">
-<img src="resources/images/7.PNG" alt="7.PNG" width="300">
+<img src="resources/images/7.PNG" alt="7.PNG" width="400">
 </p>
 
 9.  When closing, a warning window is displayed to remind users that the QGIS canvas will be cleared and all uploaded files will disappear.
