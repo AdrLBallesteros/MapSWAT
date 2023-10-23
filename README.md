@@ -40,7 +40,7 @@
   
 *	**MapSWAT needs to get access to Google Earth Engine (GEE)**. In order to use GEE, **registration is required** at [https://signup.earthengine.google.com](https://signup.earthengine.google.com). When you GEE acount is accepted, you will receive the following email:
 <p align="center">
-<img src="resources/images/login_GEE.png" alt="screenshot" width="600">
+<img src="resources/images/login_GEE.png" alt="screenshot" width="400">
 </p>
 
 > To facilitate the approval process, GEE organization suggests that you sign up with an email associated with your organization.
