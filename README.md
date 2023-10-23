@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">MapSWAT is a QGIS plugin for preparing QSWAT or QSWAT+ input maps.</h4>
+<h4 align="center">MapSWAT is a QGIS plugin for generating ready-to-use SWAT or SWAT+ input maps.</h4>
 
 <p align="center">
   <a href="#why-mapswat">Why MapSWAT?</a> •
@@ -77,9 +77,9 @@
 <img src="resources/images/1.PNG" alt="1" width="300">
 </p>
 
-> **MapSWAT v3.0**: This is the standard version of MapSWAT. Users can import their own raster maps and prepare them in QSWAT or QSWAT+ format.
+> **MapSWAT v3.0**: This is the Standard version of MapSWAT. Users can import their own raster maps and prepare them in SWAT or SWAT+ format.
 
-> **MapSWAT GEE**: This is the connected to [Google Earth Engine (GEE)](https://earthengine.google.com/) version of MapSWAT. Users must first sign up for a GEE account and install the GEE plugin from QGIS repository.
+> **MapSWAT GEE**: This is the Connected to [Google Earth Engine (GEE)](https://earthengine.google.com/) version of MapSWAT. Users must first sign up for a GEE account and install the GEE plugin from the QGIS repository.
 
 2.  Before going to the selected MapSWAT version, users also have to indicate a path to save the MapSWAT folder.
 
