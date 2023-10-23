@@ -2,7 +2,7 @@
 name=MapSWAT v3.0
 qgisMinimumVersion=3.1
 qgisMaximumVersion=3.99
-description= MapSWAT is a QGIS plugin for preparing QSWAT or QSWAT+ input maps.	
+description= MapSWAT is a QGIS plugin for generating ready-to-use SWAT or SWAT+ input maps.	
 about= 
 version=3.0
 author= alopez6@ucam.edu
