@@ -43,7 +43,6 @@
 <img src="resources/images/login_GEE.png" alt="screenshot" width="400">
 </p>
 
-> To facilitate the approval process, GEE organization suggests that you sign up with an email associated with your organization.
 
 *	Launch a **QGIS 3 project**, navigate to **Plugins > Manage and Install Plugins > All**, and then search for [**"Google Earth Engine"**](https://github.com/gee-community/qgis-earthengine-plugin) plugin.
 <p align="center">
@@ -60,6 +59,8 @@
 <p align="center">
 <img src="resources/images/msg.png" alt="message" width="400">
 </p>
+
+> If you are unable to connect to GEE MapSWAT, try to register to GEE with a different email address.
 
 ## Key Points
 
