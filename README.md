@@ -60,7 +60,7 @@
 <img src="resources/images/msg.png" alt="message" width="400">
 </p>
 
-> If you are unable to connect to GEE MapSWAT, try to register to GEE with a different email address.
+> If you are unable to connect to MapSWAT GEE, try to register to GEE with a different email address.
 
 ## Key Points
 
