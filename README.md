@@ -127,6 +127,8 @@
 <img src="resources/gifs/Shapefile_clip.gif" alt="Shapefile_clip.gif" width="500">
 </p>
 
+> If you are using a shapefile from your study area, make sure it has only one attribute.
+
   * **BUFFER CLIP**:  With this option, an extraction mask (POLYGON) is automatically created around the outlet point. To do so, users have to indicate the buffer distance in kilometers (10 Km by default).
   
 <p align="center">
