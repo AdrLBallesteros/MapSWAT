@@ -1,0 +1,353 @@
+SoilID,TextureID,Order,Suborder,Group,Horizon_1,Horizon_2,Horizon_3
+156,11010101,Vertisols,Usterts,chromusterts,clay,clay,clay
+157,11010102,Inceptisols,Ochrepts,xerochrepts,clay,clay,silty clay
+158,11010103,Inceptisols,Ochrepts,xerochrepts,clay,clay,silty clay loam
+159,11010104,Entisols,Psamments,torripsamments,clay,clay,sandy clay
+160,11010105,Mollisols,Ustolls,haplustolls,clay,clay,sandy clay loam
+161,11010106,Vertisols,Usterts,chromusterts,clay,clay,clay loam
+164,11010109,Alfisols,Udalfs,hapludalfs,clay,clay,loam
+168,11010201,Ultisols,Udults,paleudults,clay,silty clay,clay
+169,11010202,Inceptisols,Ochrepts,cryochrepts,clay,silty clay,silty clay
+170,11010203,Inceptisols,Ochrepts,xerochrepts,clay,silty clay,silty clay loam
+171,11010204,Entisols,Psamments,torripsamments,clay,silty clay,sandy clay
+172,11010205,Mollisols,Ustolls,haplustolls,clay,silty clay,sandy clay loam
+173,11010206,Inceptisols,Ochrepts,xerochrepts,clay,silty clay,clay loam
+180,11010301,Mollisols,Aquolls,calciaquolls,clay,silty clay loam,clay
+181,11010302,Entisols,Aquents,fluvaquents,clay,silty clay loam,silty clay
+192,11010401,Oxisols,Orthox,haplorthox,clay,sandy clay,clay
+193,11010402,Entisols,Psamments,torripsamments,clay,sandy clay,silty clay
+195,11010404,Entisols,Psamments,torripsamments,clay,sandy clay,sandy clay
+205,11010502,Vertisols,Usterts,chromusterts,clay,sandy clay loam,silty clay
+208,11010505,Aridisols,Calcids,petrocalcids,clay,sandy clay loam,sandy clay loam
+216,11010601,Vertisols,Usterts,chromusterts,clay,clay loam,clay
+217,11010602,Oxisols,Ustox,acrustox,clay,clay loam,silty clay
+218,11010603,Alfisols,Udalfs,hapludalfs,clay,clay loam,silty clay loam
+220,11010605,Mollisols,Ustolls,haplustolls,clay,clay loam,sandy clay loam
+221,11010606,Vertisols,Usterts,chromusterts,clay,clay loam,clay loam
+223,11010608,Spodosols,Orthods,haplorthods,clay,clay loam,silt loam
+224,11010609,Mollisols,Udolls,hapludolls,clay,clay loam,loam
+301,11020101,Oxisols,Orthox,haplorthox,silty clay,clay,clay
+302,11020102,Entisols,Fluvents,torrifluvents,silty clay,clay,silty clay
+303,11020103,Inceptisols,Ochrepts,xerochrepts,silty clay,clay,silty clay loam
+304,11020104,Vertisols,Xererts,chromoxererts,silty clay,clay,sandy clay
+305,11020105,Entisols,Orthents,torriorthents,silty clay,clay,sandy clay loam
+306,11020106,Entisols,Fluvents,torrifluvents,silty clay,clay,clay loam
+313,11020201,Oxisols,Orthox,haplorthox,silty clay,silty clay,clay
+314,11020202,Oxisols,Orthox,haplorthox,silty clay,silty clay,silty clay
+315,11020203,Inceptisols,Ochrepts,xerochrepts,silty clay,silty clay,silty clay loam
+316,11020204,Oxisols,Orthox,haplorthox,silty clay,silty clay,sandy clay
+317,11020205,Inceptisols,Ochrepts,cryochrepts,silty clay,silty clay,sandy clay loam
+318,11020206,Oxisols,Ustox,acrustox,silty clay,silty clay,clay loam
+320,11020208,Oxisols,Orthox,haplorthox,silty clay,silty clay,silt loam
+321,11020209,Inceptisols,Ochrepts,cryochrepts,silty clay,silty clay,loam
+324,11020212,Inceptisols,Ochrepts,cryochrepts,silty clay,silty clay,sandy loam
+325,11020301,Vertisols,Aquerts,epiaquerts,silty clay,silty clay loam,clay
+326,11020302,Mollisols,Aquolls,calciaquolls,silty clay,silty clay loam,silty clay
+327,11020303,Inceptisols,Ochrepts,xerochrepts,silty clay,silty clay loam,silty clay loam
+330,11020306,Inceptisols,Ochrepts,xerochrepts,silty clay,silty clay loam,clay loam
+337,11020401,Oxisols,Orthox,haplorthox,silty clay,sandy clay,clay
+338,11020402,Entisols,Psamments,torripsamments,silty clay,sandy clay,silty clay
+340,11020404,Alfisols,Ustalfs,paleustalfs,silty clay,sandy clay,sandy clay
+349,11020501,Ultisols,Udults,paleudults,silty clay,sandy clay loam,clay
+350,11020502,Oxisols,Ustox,acrustox,silty clay,sandy clay loam,silty clay
+353,11020505,Inceptisols,Ochrepts,cryochrepts,silty clay,sandy clay loam,sandy clay loam
+354,11020506,Ultisols,Udults,paleudults,silty clay,sandy clay loam,clay loam
+357,11020509,Inceptisols,Ochrepts,cryochrepts,silty clay,sandy clay loam,loam
+360,11020512,Inceptisols,Ochrepts,cryochrepts,silty clay,sandy clay loam,sandy loam
+361,11020601,Oxisols,Orthox,haplorthox,silty clay,clay loam,clay
+362,11020602,Oxisols,Orthox,haplorthox,silty clay,clay loam,silty clay
+363,11020603,Inceptisols,Ochrepts,xerochrepts,silty clay,clay loam,silty clay loam
+365,11020605,Inceptisols,Ochrepts,cryochrepts,silty clay,clay loam,sandy clay loam
+366,11020606,Oxisols,Orthox,haplorthox,silty clay,clay loam,clay loam
+369,11020609,Inceptisols,Ochrepts,cryochrepts,silty clay,clay loam,loam
+372,11020612,Ultisols,Ustults,kandiustults,silty clay,clay loam,sandy loam
+387,11020803,Ultisols,Udults,paleudults,silty clay,silt loam,silty clay loam
+398,11020902,Gelisols,Orthels,anhyorthels,silty clay,loam,silty clay
+401,11020905,Entisols,Orthents,torriorthents,silty clay,loam,sandy clay loam
+402,11020906,Ultisols,Udults,paleudults,silty clay,loam,clay loam
+404,11020908,Inceptisols,Andepts,dystrandepts,silty clay,loam,silt loam
+405,11020909,Entisols,Orthents,torriorthents,silty clay,loam,loam
+408,11020912,Inceptisols,Ochrepts,cryochrepts,silty clay,loam,sandy loam
+434,11021202,Inceptisols,Ochrepts,cryochrepts,silty clay,sandy loam,silty clay
+437,11021205,Inceptisols,Ochrepts,cryochrepts,silty clay,sandy loam,sandy clay loam
+438,11021206,Inceptisols,Umbrepts,haplumbrepts,silty clay,sandy loam,clay loam
+441,11021209,Inceptisols,Ochrepts,cryochrepts,silty clay,sandy loam,loam
+444,11021212,Inceptisols,Ochrepts,cryochrepts,silty clay,sandy loam,sandy loam
+445,11030101,Inceptisols,Ochrepts,cryochrepts,silty clay loam,clay,clay
+446,11030102,Vertisols,Torrerts,torrerts,silty clay loam,clay,silty clay
+447,11030103,Inceptisols,Ochrepts,cryochrepts,silty clay loam,clay,silty clay loam
+450,11030106,Inceptisols,Ochrepts,xerochrepts,silty clay loam,clay,clay loam
+457,11030201,Vertisols,Usterts,haplusterts,silty clay loam,silty clay,clay
+458,11030202,Vertisols,Usterts,haplusterts,silty clay loam,silty clay,silty clay
+459,11030203,Mollisols,Xerolls,calcixerolls,silty clay loam,silty clay,silty clay loam
+462,11030206,Inceptisols,Ochrepts,xerochrepts,silty clay loam,silty clay,clay loam
+469,11030301,Inceptisols,Ochrepts,xerochrepts,silty clay loam,silty clay loam,clay
+470,11030302,Mollisols,Udolls,argiudolls,silty clay loam,silty clay loam,silty clay
+471,11030303,Mollisols,Udolls,argiudolls,silty clay loam,silty clay loam,silty clay loam
+474,11030306,Mollisols,Aquolls,endoaquolls,silty clay loam,silty clay loam,clay loam
+476,11030308,Mollisols,Udolls,hapludolls,silty clay loam,silty clay loam,silt loam
+477,11030309,Mollisols,Udolls,hapludolls,silty clay loam,silty clay loam,loam
+505,11030601,Ultisols,Udults,paleudults,silty clay loam,clay loam,clay
+506,11030602,Ultisols,Udults,paleudults,silty clay loam,clay loam,silty clay
+507,11030603,Ultisols,Udults,paleudults,silty clay loam,clay loam,silty clay loam
+510,11030606,Mollisols,Aquolls,endoaquolls,silty clay loam,clay loam,clay loam
+512,11030608,Inceptisols,Aquepts,tropaquepts,silty clay loam,clay loam,silt loam
+513,11030609,Inceptisols,Ochrepts,cryochrepts,silty clay loam,clay loam,loam
+530,11030802,Mollisols,Ustolls,argiustolls,silty clay loam,silt loam,silty clay
+531,11030803,Mollisols,Udolls,argiudolls,silty clay loam,silt loam,silty clay loam
+534,11030806,Mollisols,Aquolls,endoaquolls,silty clay loam,silt loam,clay loam
+536,11030808,Mollisols,Udolls,hapludolls,silty clay loam,silt loam,silt loam
+589,11040101,Oxisols,Orthox,haplorthox,sandy clay,clay,clay
+590,11040102,Entisols,Psamments,torripsamments,sandy clay,clay,silty clay
+592,11040104,Entisols,Psamments,torripsamments,sandy clay,clay,sandy clay
+601,11040201,Ultisols,Udults,paleudults,sandy clay,silty clay,clay
+602,11040202,Entisols,Psamments,torripsamments,sandy clay,silty clay,silty clay
+604,11040204,Entisols,Psamments,torripsamments,sandy clay,silty clay,sandy clay
+625,11040401,Oxisols,Orthox,haplorthox,sandy clay,sandy clay,clay
+626,11040402,Entisols,Psamments,torripsamments,sandy clay,sandy clay,silty clay
+628,11040404,Entisols,Psamments,torripsamments,sandy clay,sandy clay,sandy clay
+629,11040405,Ultisols,Ustults,kandiustults,sandy clay,sandy clay,sandy clay loam
+733,11050101,Vertisols,Xererts,chromoxererts,sandy clay loam,clay,clay
+734,11050102,Oxisols,Orthox,acrorthox,sandy clay loam,clay,silty clay
+738,11050106,Mollisols,Ustolls,argiustolls,sandy clay loam,clay,clay loam
+745,11050201,Oxisols,Orthox,haplorthox,sandy clay loam,silty clay,clay
+746,11050202,Entisols,Fluvents,torrifluvents,sandy clay loam,silty clay,silty clay
+748,11050204,Oxisols,Orthox,haplorthox,sandy clay loam,silty clay,sandy clay
+749,11050205,Entisols,Fluvents,torrifluvents,sandy clay loam,silty clay,sandy clay loam
+750,11050206,Oxisols,Orthox,haplorthox,sandy clay loam,silty clay,clay loam
+753,11050209,Inceptisols,Ochrepts,cryochrepts,sandy clay loam,silty clay,loam
+756,11050212,Inceptisols,Ochrepts,cryochrepts,sandy clay loam,silty clay,sandy loam
+769,11050401,Vertisols,Xererts,chromoxererts,sandy clay loam,sandy clay,clay
+770,11050402,Aridisols,Argids,paleargids,sandy clay loam,sandy clay,silty clay
+772,11050404,Entisols,Orthents,xerorthents,sandy clay loam,sandy clay,sandy clay
+781,11050501,Oxisols,Orthox,haplorthox,sandy clay loam,sandy clay loam,clay
+782,11050502,Oxisols,Orthox,haplorthox,sandy clay loam,sandy clay loam,silty clay
+784,11050504,Oxisols,Orthox,haplorthox,sandy clay loam,sandy clay loam,sandy clay
+785,11050505,Entisols,Fluvents,torrifluvents,sandy clay loam,sandy clay loam,sandy clay loam
+786,11050506,Ultisols,Udults,paleudults,sandy clay loam,sandy clay loam,clay loam
+788,11050508,Aridisols,Cambids,haplocambids,sandy clay loam,sandy clay loam,silt loam
+789,11050509,Inceptisols,Ochrepts,cryochrepts,sandy clay loam,sandy clay loam,loam
+791,11050511,Alfisols,Udalfs,hapludalfs,sandy clay loam,sandy clay loam,loamy sand
+792,11050512,Entisols,Psamments,torripsamments,sandy clay loam,sandy clay loam,sandy loam
+793,11050601,Oxisols,Orthox,haplorthox,sandy clay loam,clay loam,clay
+794,11050602,Mollisols,Ustolls,haplustolls,sandy clay loam,clay loam,silty clay
+797,11050605,Inceptisols,Ochrepts,cryochrepts,sandy clay loam,clay loam,sandy clay loam
+798,11050606,Alfisols,Ustalfs,haplustalfs,sandy clay loam,clay loam,clay loam
+801,11050609,Inceptisols,Ochrepts,cryochrepts,sandy clay loam,clay loam,loam
+829,11050901,Mollisols,Aquolls,haplaquolls,sandy clay loam,loam,clay
+830,11050902,Gelisols,Orthels,anhyorthels,sandy clay loam,loam,silty clay
+833,11050905,Inceptisols,Ochrepts,cryochrepts,sandy clay loam,loam,sandy clay loam
+834,11050906,Ultisols,Udults,paleudults,sandy clay loam,loam,clay loam
+837,11050909,Gelisols,Orthels,anhyorthels,sandy clay loam,loam,loam
+840,11050912,Inceptisols,Ochrepts,cryochrepts,sandy clay loam,loam,sandy loam
+866,11051202,Gelisols,Orthels,anhyorthels,sandy clay loam,sandy loam,silty clay
+869,11051205,Oxisols,Ustox,acrustox,sandy clay loam,sandy loam,sandy clay loam
+870,11051206,Inceptisols,Ochrepts,dystrochrepts,sandy clay loam,sandy loam,clay loam
+873,11051209,Mollisols,Ustolls,haplustolls,sandy clay loam,sandy loam,loam
+874,11051210,Spodosols,Orthods,haplorthods,sandy clay loam,sandy loam,sand
+875,11051211,Alfisols,Udalfs,hapludalfs,sandy clay loam,sandy loam,loamy sand
+876,11051212,Entisols,Psamments,torripsamments,sandy clay loam,sandy loam,sandy loam
+877,11060101,Oxisols,Orthox,haplorthox,clay loam,clay,clay
+878,11060102,Inceptisols,Ochrepts,cryochrepts,clay loam,clay,silty clay
+879,11060103,Inceptisols,Ochrepts,cryochrepts,clay loam,clay,silty clay loam
+881,11060105,Entisols,Psamments,quartzipsamments,clay loam,clay,sandy clay loam
+882,11060106,Vertisols,Usterts,chromusterts,clay loam,clay,clay loam
+884,11060108,Entisols,Orthents,torriorthents,clay loam,clay,silt loam
+889,11060201,Oxisols,Orthox,haplorthox,clay loam,silty clay,clay
+890,11060202,Inceptisols,Ochrepts,cryochrepts,clay loam,silty clay,silty clay
+891,11060203,Inceptisols,Ochrepts,cryochrepts,clay loam,silty clay,silty clay loam
+893,11060205,Inceptisols,Ochrepts,cryochrepts,clay loam,silty clay,sandy clay loam
+894,11060206,Ultisols,Udults,paleudults,clay loam,silty clay,clay loam
+897,11060209,Inceptisols,Ochrepts,cryochrepts,clay loam,silty clay,loam
+900,11060212,Spodosols,Orthods,haplorthods,clay loam,silty clay,sandy loam
+901,11060301,Vertisols,Usterts,haplusterts,clay loam,silty clay loam,clay
+902,11060302,Vertisols,Usterts,haplusterts,clay loam,silty clay loam,silty clay
+903,11060303,Mollisols,Ustolls,haplustolls,clay loam,silty clay loam,silty clay loam
+906,11060306,Mollisols,Aquolls,endoaquolls,clay loam,silty clay loam,clay loam
+908,11060308,Entisols,Fluvents,udifluvents,clay loam,silty clay loam,silt loam
+925,11060501,Oxisols,Orthox,haplorthox,clay loam,sandy clay loam,clay
+926,11060502,Oxisols,Orthox,haplorthox,clay loam,sandy clay loam,silty clay
+929,11060505,Inceptisols,Ochrepts,cryochrepts,clay loam,sandy clay loam,sandy clay loam
+930,11060506,Ultisols,Udults,paleudults,clay loam,sandy clay loam,clay loam
+933,11060509,Inceptisols,Ochrepts,cryochrepts,clay loam,sandy clay loam,loam
+936,11060512,Andisols,Udands,hydrudands,clay loam,sandy clay loam,sandy loam
+937,11060601,Oxisols,Orthox,haplorthox,clay loam,clay loam,clay
+938,11060602,Vertisols,Usterts,haplusterts,clay loam,clay loam,silty clay
+939,11060603,Mollisols,Ustolls,haplustolls,clay loam,clay loam,silty clay loam
+941,11060605,Inceptisols,Ochrepts,cryochrepts,clay loam,clay loam,sandy clay loam
+942,11060606,Ultisols,Udults,tropudults,clay loam,clay loam,clay loam
+944,11060608,Alfisols,Udalfs,hapludalfs,clay loam,clay loam,silt loam
+945,11060609,Inceptisols,Ochrepts,cryochrepts,clay loam,clay loam,loam
+947,11060611,Alfisols,Udalfs,hapludalfs,clay loam,clay loam,loamy sand
+948,11060612,Alfisols,Boralfs,cryoboralfs,clay loam,clay loam,sandy loam
+963,11060803,Ultisols,Udults,paleudults,clay loam,silt loam,silty clay loam
+966,11060806,Ultisols,Udults,paleudults,clay loam,silt loam,clay loam
+968,11060808,Mollisols,Aquolls,endoaquolls,clay loam,silt loam,silt loam
+969,11060809,Mollisols,Aquolls,endoaquolls,clay loam,silt loam,loam
+973,11060901,Alfisols,Boralfs,eutroboralfs,clay loam,loam,clay
+974,11060902,Gelisols,Orthels,anhyorthels,clay loam,loam,silty clay
+975,11060903,Ultisols,Udults,paleudults,clay loam,loam,silty clay loam
+977,11060905,Inceptisols,Ochrepts,cryochrepts,clay loam,loam,sandy clay loam
+978,11060906,Ultisols,Udults,paleudults,clay loam,loam,clay loam
+980,11060908,Mollisols,Aquolls,endoaquolls,clay loam,loam,silt loam
+981,11060909,Gelisols,Orthels,anhyorthels,clay loam,loam,loam
+984,11060912,Mollisols,Ustolls,haplustolls,clay loam,loam,sandy loam
+1095,11070703,Alfisols,Udalfs,hapludalfs,silt,silt,silty clay loam
+1099,11070707,Alfisols,Udalfs,hapludalfs,silt,silt,silt
+1100,11070708,Alfisols,Udalfs,hapludalfs,silt,silt,silt loam
+1107,11070803,Alfisols,Udalfs,hapludalfs,silt,silt loam,silty clay loam
+1112,11070808,Alfisols,Udalfs,hapludalfs,silt,silt loam,silt loam
+1189,11080301,Alfisols,Udalfs,hapludalfs,silt loam,silty clay loam,clay
+1190,11080302,Alfisols,Udalfs,hapludalfs,silt loam,silty clay loam,silty clay
+1191,11080303,Mollisols,Udolls,argiudolls,silt loam,silty clay loam,silty clay loam
+1194,11080306,Alfisols,Udalfs,hapludalfs,silt loam,silty clay loam,clay loam
+1196,11080308,Mollisols,Udolls,hapludolls,silt loam,silty clay loam,silt loam
+1197,11080309,Alfisols,Udalfs,hapludalfs,silt loam,silty clay loam,loam
+1225,11080601,Alfisols,Udalfs,hapludalfs,silt loam,clay loam,clay
+1226,11080602,Alfisols,Udalfs,hapludalfs,silt loam,clay loam,silty clay
+1227,11080603,Alfisols,Udalfs,hapludalfs,silt loam,clay loam,silty clay loam
+1230,11080606,Alfisols,Udalfs,hapludalfs,silt loam,clay loam,clay loam
+1232,11080608,Alfisols,Udalfs,hapludalfs,silt loam,clay loam,silt loam
+1233,11080609,Mollisols,Aquolls,endoaquolls,silt loam,clay loam,loam
+1243,11080707,Alfisols,Udalfs,hapludalfs,silt loam,silt,silt
+1244,11080708,Alfisols,Udalfs,hapludalfs,silt loam,silt,silt loam
+1249,11080801,Alfisols,Udalfs,hapludalfs,silt loam,silt loam,clay
+1250,11080802,Alfisols,Udalfs,hapludalfs,silt loam,silt loam,silty clay
+1251,11080803,Alfisols,Udalfs,hapludalfs,silt loam,silt loam,silty clay loam
+1253,11080805,Inceptisols,Ochrepts,cryochrepts,silt loam,silt loam,sandy clay loam
+1254,11080806,Alfisols,Udalfs,hapludalfs,silt loam,silt loam,clay loam
+1255,11080807,Alfisols,Udalfs,hapludalfs,silt loam,silt loam,silt
+1256,11080808,Alfisols,Udalfs,hapludalfs,silt loam,silt loam,silt loam
+1257,11080809,Inceptisols,Ochrepts,cryochrepts,silt loam,silt loam,loam
+1259,11080811,Inceptisols,Ochrepts,cryochrepts,silt loam,silt loam,loamy sand
+1260,11080812,Spodosols,Orthods,cryorthods,silt loam,silt loam,sandy loam
+1261,11080901,Ultisols,Udults,paleudults,silt loam,loam,clay
+1263,11080903,Ultisols,Udults,paleudults,silt loam,loam,silty clay loam
+1266,11080906,Alfisols,Udalfs,hapludalfs,silt loam,loam,clay loam
+1268,11080908,Alfisols,Udalfs,hapludalfs,silt loam,loam,silt loam
+1269,11080909,Inceptisols,Ochrepts,cryochrepts,silt loam,loam,loam
+1271,11080911,Spodosols,Orthods,cryorthods,silt loam,loam,loamy sand
+1272,11080912,Spodosols,Orthods,cryorthods,silt loam,loam,sandy loam
+1301,11081205,Aridisols,Orthids,calciorthids,silt loam,sandy loam,sandy clay loam
+1302,11081206,Oxisols,Orthox,haplorthox,silt loam,sandy loam,clay loam
+1304,11081208,Spodosols,Orthods,cryorthods,silt loam,sandy loam,silt loam
+1305,11081209,Spodosols,Orthods,cryorthods,silt loam,sandy loam,loam
+1307,11081211,Entisols,Fluvents,cryofluvents,silt loam,sandy loam,loamy sand
+1308,11081212,Spodosols,Orthods,cryorthods,silt loam,sandy loam,sandy loam
+1309,11090101,Inceptisols,Ochrepts,cryochrepts,loam,clay,clay
+1314,11090106,Inceptisols,Ochrepts,cryochrepts,loam,clay,clay loam
+1321,11090201,Inceptisols,Andepts,dystrandepts,loam,silty clay,clay
+1322,11090202,Inceptisols,Ochrepts,cryochrepts,loam,silty clay,silty clay
+1325,11090205,Inceptisols,Ochrepts,cryochrepts,loam,silty clay,sandy clay loam
+1326,11090206,Ultisols,Udults,paleudults,loam,silty clay,clay loam
+1329,11090209,Inceptisols,Ochrepts,cryochrepts,loam,silty clay,loam
+1332,11090212,Inceptisols,Ochrepts,cryochrepts,loam,silty clay,sandy loam
+1334,11090302,Entisols,Orthents,torriorthents,loam,silty clay loam,silty clay
+1335,11090303,Inceptisols,Aquepts,cryaquepts,loam,silty clay loam,silty clay loam
+1338,11090306,Gelisols,Turbels,histoturbels,loam,silty clay loam,clay loam
+1357,11090501,Inceptisols,Andepts,dystrandepts,loam,sandy clay loam,clay
+1358,11090502,Inceptisols,Ochrepts,cryochrepts,loam,sandy clay loam,silty clay
+1361,11090505,Inceptisols,Ochrepts,cryochrepts,loam,sandy clay loam,sandy clay loam
+1362,11090506,Ultisols,Udults,paleudults,loam,sandy clay loam,clay loam
+1365,11090509,Inceptisols,Ochrepts,cryochrepts,loam,sandy clay loam,loam
+1368,11090512,Inceptisols,Ochrepts,cryochrepts,loam,sandy clay loam,sandy loam
+1369,11090601,Inceptisols,Andepts,dystrandepts,loam,clay loam,clay
+1370,11090602,Inceptisols,Ochrepts,cryochrepts,loam,clay loam,silty clay
+1371,11090603,Mollisols,Ustolls,argiustolls,loam,clay loam,silty clay loam
+1373,11090605,Inceptisols,Ochrepts,cryochrepts,loam,clay loam,sandy clay loam
+1374,11090606,Inceptisols,Ochrepts,cryochrepts,loam,clay loam,clay loam
+1376,11090608,Alfisols,Udalfs,hapludalfs,loam,clay loam,silt loam
+1377,11090609,Inceptisols,Ochrepts,cryochrepts,loam,clay loam,loam
+1380,11090612,Entisols,Psamments,udipsamments,loam,clay loam,sandy loam
+1395,11090803,Alfisols,Udalfs,hapludalfs,loam,silt loam,silty clay loam
+1398,11090806,Alfisols,Udalfs,hapludalfs,loam,silt loam,clay loam
+1400,11090808,Inceptisols,Aquepts,cryaquepts,loam,silt loam,silt loam
+1401,11090809,Inceptisols,Ochrepts,cryochrepts,loam,silt loam,loam
+1404,11090812,Spodosols,Orthods,cryorthods,loam,silt loam,sandy loam
+1405,11090901,Ultisols,Udults,paleudults,loam,loam,clay
+1406,11090902,Inceptisols,Ochrepts,cryochrepts,loam,loam,silty clay
+1407,11090903,Alfisols,Udalfs,hapludalfs,loam,loam,silty clay loam
+1409,11090905,Inceptisols,Ochrepts,cryochrepts,loam,loam,sandy clay loam
+1410,11090906,Alfisols,Udalfs,hapludalfs,loam,loam,clay loam
+1412,11090908,Alfisols,Udalfs,hapludalfs,loam,loam,silt loam
+1413,11090909,Inceptisols,Ochrepts,cryochrepts,loam,loam,loam
+1415,11090911,Spodosols,Orthods,haplorthods,loam,loam,loamy sand
+1416,11090912,Inceptisols,Ochrepts,cryochrepts,loam,loam,sandy loam
+1441,11091201,Ultisols,Udults,hapludults,loam,sandy loam,clay
+1442,11091202,Inceptisols,Ochrepts,cryochrepts,loam,sandy loam,silty clay
+1445,11091205,Inceptisols,Ochrepts,cryochrepts,loam,sandy loam,sandy clay loam
+1446,11091206,Ultisols,Udults,hapludults,loam,sandy loam,clay loam
+1448,11091208,Inceptisols,Ochrepts,cryochrepts,loam,sandy loam,silt loam
+1449,11091209,Inceptisols,Ochrepts,cryochrepts,loam,sandy loam,loam
+1451,11091211,Spodosols,Orthods,cryorthods,loam,sandy loam,loamy sand
+1452,11091212,Inceptisols,Ochrepts,cryochrepts,loam,sandy loam,sandy loam
+1565,11101005,Alfisols,Udalfs,hapludalfs,sand,sand,sandy clay loam
+1570,11101010,Entisols,Psamments,torripsamments,sand,sand,sand
+1571,11101011,Entisols,Psamments,torripsamments,sand,sand,loamy sand
+1572,11101012,Entisols,Psamments,quartzipsamments,sand,sand,sandy loam
+1577,11101105,Entisols,Fluvents,torrifluvents,sand,loamy sand,sandy clay loam
+1582,11101110,Entisols,Psamments,torripsamments,sand,loamy sand,sand
+1583,11101111,Entisols,Psamments,torripsamments,sand,loamy sand,loamy sand
+1584,11101112,Entisols,Psamments,quartzipsamments,sand,loamy sand,sandy loam
+1595,11101211,Aridisols,Argids,haplargids,sand,sandy loam,loamy sand
+1646,11110502,Alfisols,Xeralfs,natrixeralfs,loamy sand,sandy clay loam,silty clay
+1649,11110505,Alfisols,Xeralfs,haploxeralfs,loamy sand,sandy clay loam,sandy clay loam
+1709,11111005,Alfisols,Xeralfs,natrixeralfs,loamy sand,sand,sandy clay loam
+1714,11111010,Entisols,Psamments,torripsamments,loamy sand,sand,sand
+1715,11111011,Entisols,Psamments,torripsamments,loamy sand,sand,loamy sand
+1716,11111012,Entisols,Psamments,quartzipsamments,loamy sand,sand,sandy loam
+1718,11111102,Alfisols,Xeralfs,natrixeralfs,loamy sand,loamy sand,silty clay
+1720,11111104,Alfisols,Xeralfs,natrixeralfs,loamy sand,loamy sand,sandy clay
+1721,11111105,Spodosols,Humods,haplohumods,loamy sand,loamy sand,sandy clay loam
+1725,11111109,Entisols,Psamments,udipsamments,loamy sand,loamy sand,loam
+1726,11111110,Entisols,Psamments,torripsamments,loamy sand,loamy sand,sand
+1727,11111111,Entisols,Psamments,torripsamments,loamy sand,loamy sand,loamy sand
+1728,11111112,Entisols,Psamments,torripsamments,loamy sand,loamy sand,sandy loam
+1730,11111202,Spodosols,Orthods,haplorthods,loamy sand,sandy loam,silty clay
+1732,11111204,Spodosols,Orthods,haplorthods,loamy sand,sandy loam,sandy clay
+1733,11111205,Entisols,Psamments,xeropsamments,loamy sand,sandy loam,sandy clay loam
+1738,11111210,Entisols,Psamments,quartzipsamments,loamy sand,sandy loam,sand
+1739,11111211,Entisols,Psamments,torripsamments,loamy sand,sandy loam,loamy sand
+1740,11111212,Entisols,Psamments,torripsamments,loamy sand,sandy loam,sandy loam
+1741,11120101,Alfisols,Ustalfs,paleustalfs,sandy loam,clay,clay
+1754,11120202,Inceptisols,Ochrepts,cryochrepts,sandy loam,silty clay,silty clay
+1757,11120205,Inceptisols,Ochrepts,cryochrepts,sandy loam,silty clay,sandy clay loam
+1758,11120206,Ultisols,Udults,hapludults,sandy loam,silty clay,clay loam
+1761,11120209,Entisols,Orthents,torriorthents,sandy loam,silty clay,loam
+1764,11120212,Inceptisols,Ochrepts,cryochrepts,sandy loam,silty clay,sandy loam
+1789,11120501,Mollisols,Udolls,paleudolls,sandy loam,sandy clay loam,clay
+1790,11120502,Alfisols,Xeralfs,natrixeralfs,sandy loam,sandy clay loam,silty clay
+1792,11120504,Ultisols,Ustults,haplustults,sandy loam,sandy clay loam,sandy clay
+1793,11120505,Entisols,Fluvents,torrifluvents,sandy loam,sandy clay loam,sandy clay loam
+1794,11120506,Alfisols,Ustalfs,paleustalfs,sandy loam,sandy clay loam,clay loam
+1797,11120509,Aridisols,Argids,haplargids,sandy loam,sandy clay loam,loam
+1800,11120512,Entisols,Psamments,torripsamments,sandy loam,sandy clay loam,sandy loam
+1801,11120601,Alfisols,Ustalfs,paleustalfs,sandy loam,clay loam,clay
+1805,11120605,Aridisols,Argids,natrargids,sandy loam,clay loam,sandy clay loam
+1806,11120606,Alfisols,Ustalfs,paleustalfs,sandy loam,clay loam,clay loam
+1832,11120808,Spodosols,Orthods,cryorthods,sandy loam,silt loam,silt loam
+1833,11120809,Spodosols,Orthods,cryorthods,sandy loam,silt loam,loam
+1836,11120812,Spodosols,Orthods,cryorthods,sandy loam,silt loam,sandy loam
+1837,11120901,Alfisols,Udalfs,hapludalfs,sandy loam,loam,clay
+1838,11120902,Inceptisols,Ochrepts,cryochrepts,sandy loam,loam,silty clay
+1841,11120905,Aridisols,Argids,haplargids,sandy loam,loam,sandy clay loam
+1842,11120906,Ultisols,Udults,hapludults,sandy loam,loam,clay loam
+1844,11120908,Alfisols,Udalfs,hapludalfs,sandy loam,loam,silt loam
+1845,11120909,Entisols,Orthents,torriorthents,sandy loam,loam,loam
+1848,11120912,Inceptisols,Ochrepts,cryochrepts,sandy loam,loam,sandy loam
+1858,11121010,Entisols,Orthents,torriorthents,sandy loam,sand,sand
+1859,11121011,Aridisols,Orthids,calciorthids,sandy loam,sand,loamy sand
+1865,11121105,Entisols,Psamments,quartzipsamments,sandy loam,loamy sand,sandy clay loam
+1870,11121110,Entisols,Orthents,torriorthents,sandy loam,loamy sand,sand
+1871,11121111,Entisols,Psamments,torripsamments,sandy loam,loamy sand,loamy sand
+1872,11121112,Entisols,Psamments,torripsamments,sandy loam,loamy sand,sandy loam
+1873,11121201,Alfisols,Ustalfs,haplustalfs,sandy loam,sandy loam,clay
+1874,11121202,Inceptisols,Ochrepts,cryochrepts,sandy loam,sandy loam,silty clay
+1876,11121204,Alfisols,Aqualfs,natraqualfs,sandy loam,sandy loam,sandy clay
+1877,11121205,Alfisols,Ustalfs,paleustalfs,sandy loam,sandy loam,sandy clay loam
+1878,11121206,Ultisols,Udults,hapludults,sandy loam,sandy loam,clay loam
+1880,11121208,Inceptisols,Ochrepts,cryochrepts,sandy loam,sandy loam,silt loam
+1881,11121209,Inceptisols,Ochrepts,cryochrepts,sandy loam,sandy loam,loam
+1882,11121210,Spodosols,Orthods,haplorthods,sandy loam,sandy loam,sand
+1883,11121211,Entisols,Psamments,torripsamments,sandy loam,sandy loam,loamy sand
+1884,11121212,Entisols,Psamments,torripsamments,sandy loam,sandy loam,sandy loam
