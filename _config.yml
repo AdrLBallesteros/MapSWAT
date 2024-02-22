@@ -1,2 +1,5 @@
 remote_theme: pages-themes/architect@v0.2.0
-google_analytics: G-K7XXLGLV90
+plugins:
+- jekyll-remote-theme
+show_downloads: false
+google_analytics: G-1HEMGT42RW
