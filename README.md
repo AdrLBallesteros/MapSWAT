@@ -13,6 +13,7 @@
   <a href="#installation">Installation</a> •
   <a href="#key-points">Key Points</a> •
   <a href="#how-to-use">How To Use</a> •
+  <a href="#future-developments">Future Developments</a> •
   <a href="#credits">Credits</a> •
   <a href="#contact">Contact</a> •
   <a href="#support">Support</a>
@@ -165,7 +166,15 @@
 
 <p align="center">
 <img src="resources/gifs/Closing.gif" alt="Closing.gif" width="650">
-</p>   
+</p>  
+
+## Future Developments
+- [ ] More DEM, LULC, and SOIL databases.
+- [ ] Global input maps require by GWFLOW.
+- [ ] Extract climate data from GEE in SWAT/SWAT+ format.
+- [ ] Upload to the QGIS plugin repository.
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any suggestions you make are greatly appreciated.
 
 ## Credits
 
