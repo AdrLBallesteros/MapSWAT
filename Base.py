@@ -2,9 +2,9 @@
 """
 /***************************************************************************
  **MapSWAT
-                                 MapSWAT is a QGIS plugin for preparing QSWAT or QSWAT+ input maps.
- **Descripcion
-                             -------------------
+ **A QGIS plugin
+ **Description: MapSWAT is a QGIS plugin for preparing QSWAT or QSWAT+ input maps.
+----------------------------------------------------
        begin                : **January-2021
         copyright            : **COPYRIGHT
         email                : **alopez6@ucam.edu
@@ -21,14 +21,11 @@
 """
 import os.path
 from qgis.core import *
-
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import QAction
-
 from .BaseDialog import BaseDialog
 import MapSWAT_v3.gui.generated.resources_rc
-
 
 class Base:
     def __init__(self, iface):
@@ -40,11 +37,9 @@ class Base:
         self.iface.addToolBarIcon(self.action)
         self.iface.addPluginToMenu(u"&MapSWAT v3.0", self.action)
 
-
     def unload(self):
         self.iface.removePluginMenu(u"&MapSWAT v3.0", self.action)
         self.iface.removeToolBarIcon(self.action)
- 
 
     def run(self):
         self.dlg = BaseDialog(self.iface)       
@@ -52,4 +47,4 @@ class Base:
         #self.dlg.show()
         self.dlg.SelectionWindow()
         #self.dlg.InitialWindow()
-       # self.dlg.exec_()
+        # self.dlg.exec_()
