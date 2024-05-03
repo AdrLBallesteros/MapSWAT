@@ -468,7 +468,14 @@ class BaseDialog(QDialog, Ui_BaseDialog):
         try:              
             Old = self.mQgsFileWidget_Polygon.filePath()
 
+            #Fix geometry of shapefile
             params = {'INPUT':Old,
+                        'METHOD':1,
+                        'OUTPUT':FolderPath + '/MapSWAT/WGS84/POLYGON_fix.shp'}
+            processing.run("native:fixgeometries",params)
+
+            #Merge attribute table
+            params = {'INPUT':FolderPath + '/MapSWAT/WGS84/POLYGON_fix.shp',
                         'FIELD':[],
                         'SEPARATE_DISJOINT':False,
                         'OUTPUT':FolderPath + '/MapSWAT/WGS84/POLYGON_diss.shp'}
@@ -527,6 +534,11 @@ class BaseDialog(QDialog, Ui_BaseDialog):
         FolderPath = self.labelPath.text()
 
         crs_target = self.mQgsProjection_Target.crs()
+
+        #Check if selected CRS is valid
+        if not crs_target.isValid():
+            QMessageBox.warning(None, "CRS selection", "Please, select a valid CRS for SWAT/SWAT+ input maps")
+            return
 
         #Change the CRS of the project to crs_target
         QgsProject.instance().setCrs(crs_target)

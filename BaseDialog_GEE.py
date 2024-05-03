@@ -357,7 +357,14 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
         try:              
             Old = self.mQgsFileWidget_Polygon.filePath()
 
+            #Fix geometry of shapefile
             params = {'INPUT':Old,
+                        'METHOD':1,
+                        'OUTPUT':FolderPath + '/MapSWAT/WGS84/POLYGON_fix.shp'}
+            processing.run("native:fixgeometries",params)
+
+            #Merge attribute table
+            params = {'INPUT':FolderPath + '/MapSWAT/WGS84/POLYGON_fix.shp',
                         'FIELD':[],
                         'SEPARATE_DISJOINT':False,
                         'OUTPUT':FolderPath + '/MapSWAT/WGS84/POLYGON_diss.shp'}
@@ -383,10 +390,16 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
     def Clip_Extension(self):
         FolderPath = self.labelPath.text()
 
+        if QgsProject.instance().mapLayersByName('GEE Mask Layer'):
+            #Select layer
+            buffer = QgsProject.instance().mapLayersByName('GEE Mask Layer')[0]
+            #Remove layer from canvas
+            QgsProject.instance().removeMapLayer(buffer.id())
+
         self.pushButton_MANUAL.setEnabled(False)
         self.pushButton_SHAPEFILE.setEnabled(False)
-        self.pushButton_BUFFER.setEnabled(False)
-        self.pushButton_AUTOBASIN.setEnabled(False)
+        # self.pushButton_BUFFER.setEnabled(False)
+        # self.pushButton_AUTOBASIN.setEnabled(False)
         self.pushButton_SWATinputs.setEnabled(True)
 
         buffer = float(self.lineBuffer.text())*1000
@@ -425,7 +438,7 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
 
         self.pushButton_MANUAL.setEnabled(False)
         self.pushButton_SHAPEFILE.setEnabled(False)
-        self.pushButton_BUFFER.setEnabled(False)
+        # self.pushButton_BUFFER.setEnabled(False)
         self.pushButton_SWATinputs.setEnabled(True)
 
         T = self.comboBox_AUTOBASIN.currentText()
@@ -464,10 +477,16 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
         Map.centerObject(point, 10)
 
     def CREATE_INPUTS(self): 
+
         FolderPath = self.labelPath.text()
 
         crs_target = self.mQgsProjection_Target.crs()
         crs_target_id = str(crs_target.authid())
+
+        #Check if selected CRS is valid
+        if not crs_target.isValid():
+            QMessageBox.warning(None, "CRS selection", "Please, select a valid CRS for SWAT/SWAT+ input maps")
+            return
 
         #Change the CRS of the project to crs_target
         QgsProject.instance().setCrs(crs_target)
@@ -884,6 +903,7 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
         msgINFO.setStandardButtons(QMessageBox.Ok)
         msgINFO.exec_()
 
+        self.pushButton_BUFFER.setEnabled(False)
         self.pushButton_AUTOBASIN.setEnabled(False)
         self.pushButton_SWATinputs.setEnabled(False) 
 
