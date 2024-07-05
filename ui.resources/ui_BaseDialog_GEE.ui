@@ -978,6 +978,58 @@
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QCheckBox" name="checkBox_GWFLOW">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>21</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelGWFLOW">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>180</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;GWFLOW&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::RichText</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_infoMaps_5">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>180</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imgMapSWAT/images/info2.png</normaloff>:/imgMapSWAT/images/info2.png</iconset>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
   <zorder>listView_4</zorder>
   <zorder>listView</zorder>
   <zorder>labelOutlet</zorder>
@@ -1025,6 +1077,9 @@
   <zorder>pushButton_infoMaps_3</zorder>
   <zorder>labelOR</zorder>
   <zorder>pushButton_infoMaps_4</zorder>
+  <zorder>checkBox_GWFLOW</zorder>
+  <zorder>labelGWFLOW</zorder>
+  <zorder>pushButton_infoMaps_5</zorder>
  </widget>
  <customwidgets>
   <customwidget>

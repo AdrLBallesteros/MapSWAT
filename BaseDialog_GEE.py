@@ -128,7 +128,9 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
                 path11 = folder + "\MapSWAT\SWAT_INPUT_MAPS\INFO_GIS\POLYGON"
                 os.makedirs(path11, exist_ok=True)
                 path12 = folder + "\MapSWAT\SWAT_INPUT_MAPS\INFO_GIS\MERGE"
-                os.makedirs(path12, exist_ok=True) 
+                os.makedirs(path12, exist_ok=True)
+                path13 = folder + "\MapSWAT\SWAT_INPUT_MAPS\GWFLOW"
+                os.makedirs(path13, exist_ok=True)
             except:
                 self.close()      
         else:
@@ -248,6 +250,11 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
             self.pushButton_SHAPEFILE.setEnabled(True) 
             self.comboBox_SOIL.setEnabled(False)
             self.checkBox_Soil.setEnabled(False) 
+
+        if self.checkBox_GWFLOW.isChecked(): 
+            self.pushButton_MANUAL.setEnabled(True)
+            self.pushButton_SHAPEFILE.setEnabled(True) 
+            self.checkBox_GWFLOW.setEnabled(False) 
 
         self.progressBar.setValue(100) 
         self.progressBar.setValue(0) 
@@ -888,7 +895,135 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
 
             self.progressBar.setValue(80)
 
-        self.progressBar.setValue(90) 
+        #Collect and clip GWFLOW inputs
+        if self.checkBox_GWFLOW.isChecked():
+            GWFLOWpath = FolderPath + "/MapSWAT/SWAT_INPUT_MAPS/GWFLOW"
+
+            # https://developers.google.com/earth-engine/apidocs/ee-featurecollection-getdownloadurl
+            #Aquifer permeability from GLHYMPS
+            # GLHYMPS = ee.FeatureCollection("projects/ee-alopez6/assets/GLHYMPS")
+            GLHYMPS = ee.FeatureCollection("projects/ee-alopez6/assets/GLHYMPS_fix")
+
+            if isinstance(self.polygon, ee.Geometry):
+                GLHYMPS_filter = GLHYMPS.filterBounds(self.polygon)
+                url = GLHYMPS_filter.getDownloadURL(**{
+                                                'filetype': 'KML',
+                                                'selectors': ['IDENTITY_', 'Porosity_x','Descriptio','logK_Ferr_'],
+                                                'filename': 'Permeability'})
+
+            elif isinstance(self.polygon, ee.FeatureCollection):
+                GLHYMPS_filter = GLHYMPS.filterBounds(self.polygon.geometry().bounds())
+                url = GLHYMPS_filter.getDownloadURL(**{
+                                                'filetype': 'KML',
+                                                'selectors': ['IDENTITY_', 'Porosity_x','Descriptio','logK_Ferr_'],
+                                                'filename': 'Permeability'})                
+
+            #Open the URL and download 
+            save_path = os.path.join(FolderPath, 'MapSWAT/SWAT_INPUT_MAPS/GWFLOW/glhymps.kml')
+            response = requests.get(url)
+            response.raise_for_status()
+            with open(save_path, 'wb') as f:
+                f.write(response.content)
+
+            #Save .kml as .shp
+            shp = os.path.join(FolderPath, 'MapSWAT/SWAT_INPUT_MAPS/GWFLOW/glhymps.shp')
+            layer = QgsVectorLayer(save_path, "Permeability_glhymps", "ogr")
+
+            # Define the fields to keep
+            fields_to_keep = ['IDENTITY_', 'Porosity_x', 'Descriptio', 'logK_Ferr_']
+            field_indices = [layer.fields().indexFromName(f) for f in fields_to_keep if layer.fields().indexFromName(f) != -1]
+            # Prepare options for saving the SHP file
+            options = QgsVectorFileWriter.SaveVectorOptions()
+            options.driverName = "ESRI Shapefile"
+            options.fileEncoding = "utf-8"
+            options.attributes = field_indices
+            # Save the layer as a SHP file using only selected fields
+            QgsVectorFileWriter.writeAsVectorFormatV2(
+                layer=layer,
+                fileName=shp,
+                transformContext=QgsProject.instance().transformContext(),
+                options=options
+            )
+            shp_proj = os.path.join(FolderPath, 'MapSWAT/SWAT_INPUT_MAPS/GWFLOW/Permeability_GLHYMPS_proj.shp')
+            #Reproject OUTLET to WGS84
+            params = {'INPUT':shp,
+                        'TARGET_CRS':crs_target,
+                        'OUTPUT':shp_proj}
+            processing.run("native:reprojectlayer",params)
+
+
+            layer_shp = QgsVectorLayer(shp_proj, "Permeability_glhymps_proj", "ogr")
+            #Start editing the layer
+            layer_shp.startEditing()
+            #Add new field
+            new_field_name = 'K_mday'
+            layer_shp.dataProvider().addAttributes([QgsField(new_field_name, QVariant.Double)])
+            layer_shp.updateFields() 
+            #Calculate the new field values
+            expression = QgsExpression('( 10 ^ ( "logK_Ferr_" /100 )  )  * 1000 * 9.81/0.001 * 86400')
+            context = QgsExpressionContext()
+            context.appendScopes(QgsExpressionContextUtils.globalProjectLayerScopes(layer_shp))
+            # Update each feature in the layer
+            for feature in layer_shp.getFeatures():
+                context.setFeature(feature)
+                new_value = expression.evaluate(context)
+                feature.setAttribute(feature.fieldNameIndex(new_field_name), new_value)
+                layer_shp.updateFeature(feature)
+            # Commit changes to the layer
+            layer_shp.commitChanges()
+
+            self.progressBar.setValue(90)
+
+            #Aquifer Thickness from BDTICM_M_250m_ll
+            BDTICM = ee.Image("projects/ee-alopez6/assets/BDTICM_M_250m_ll")
+            resolution = 250
+            resolution_ini = 250
+            #Check the type of GEE object, if Geometry == True
+            if isinstance(self.polygon, ee.geometry.Geometry):
+                i = 0
+                while i < 100:
+                    #For geometry
+                    try:
+                        url = BDTICM.getDownloadURL({'name': 'Aquifer_Thickness_BDTICM',
+                                                            'scale': resolution, 
+                                                            'crs': crs_target_id, 
+                                                            'region': self.polygon.getInfo(),  
+                                                            'fileFormat':  'GeoTIFF'})
+                        if resolution > resolution_ini:
+                            QMessageBox.information(None, "Map Resolution Adjustment", f"GEE request exceeds the limit of 32 MB. Raster resolution adjusted to {resolution} meters.")
+                        break
+                    except ee.ee_exception.EEException:
+                        resolution += 10 
+                        i += 1
+            #Check the type of GEE object, if FeatureCollection == True           
+            elif isinstance(self.polygon, ee.FeatureCollection):
+                i = 0
+                while i < 100:
+                    #For feature collection
+                    try:
+                        url = BDTICM.getDownloadURL({'name': 'Aquifer_Thickness_BDTICM',
+                                                            'scale': resolution, 
+                                                            'crs': crs_target_id, 
+                                                            'region': self.polygon.geometry().bounds().getInfo(),  
+                                                            'fileFormat':  'GeoTIFF'})
+                        if resolution > resolution_ini:
+                            QMessageBox.information(None, "Map Resolution Adjustment", f"GEE request exceeds the limit of 32 MB. Raster resolution adjusted to {resolution} meters.")
+                        break
+                    except ee.ee_exception.EEException:
+                        resolution += 10 
+                        i += 1
+            #Open the URL and download the zip
+            save_path = os.path.join(FolderPath, 'MapSWAT/SWAT_INPUT_MAPS/GWFLOW/Aquifer_Thickness_BDTICM.zip')
+            response = requests.get(url)
+            response.raise_for_status()
+            with open(save_path, 'wb') as f:
+                f.write(response.content)
+            #Extract the files of the zip file in the local folder
+            dest_directory = os.path.dirname(save_path)
+            with zipfile.ZipFile(save_path, 'r') as zip_ref:
+                zip_ref.extractall(dest_directory)
+
+        self.progressBar.setValue(95)
         self.progressBar.setValue(0)
 
         #Deactivate plugin
