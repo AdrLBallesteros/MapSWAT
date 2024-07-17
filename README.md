@@ -39,11 +39,12 @@
 
 *	Before installing the MapSWAT plugin, it is necessary to download and install [**QGIS 3.x**](https://www.qgis.org/en/site/index.html). It is recommended to use the long-term release version.
   
-*	**MapSWAT needs to get access to Google Earth Engine (GEE)**. In order to use GEE, **registration is required** at [https://signup.earthengine.google.com](https://signup.earthengine.google.com). When you GEE acount is accepted, you will receive the following email:
+*	**MapSWAT needs to get access to Google Earth Engine (GEE)**. In order to use GEE, **registration is required** at [https://signup.earthengine.google.com](https://signup.earthengine.google.com). After this process, you will have access to the **Code Editor of GEE**.
 <p align="center">
-<img src="resources/images/login_GEE.png" alt="screenshot" width="400">
+<img src="resources/images/gee-access.PNG" alt="screenshot" width="700">
 </p>
 
+> After accessing the Code Editor, go to **Profile > Project Info** and copy your **Cloud Project ID** (this information will be needed to configure MapSWAT for the first time).
 
 *	Launch a **QGIS 3 project**, navigate to **Plugins > Manage and Install Plugins > All**, and then search for [**"Google Earth Engine"**](https://github.com/gee-community/qgis-earthengine-plugin) plugin.
 <p align="center">
@@ -61,7 +62,11 @@
 <img src="resources/images/msg.png" alt="message" width="400">
 </p>
 
-> If you are unable to connect to MapSWAT GEE, try to register to GEE with a different email address.
+> If you cannot connect to MapSWAT GEE, make sure you are entering the correct **GEE Cloud Project ID**. For example: **ee-myproject**.
+<p align="center">
+<img src="resources/images/GEE-ID.PNG" alt="message" width="300">
+</p>
+
 
 ## Key Points
 
@@ -81,7 +86,7 @@
 
 > **MapSWAT v3.0**: This is the Standard version of MapSWAT. Users can import their own raster maps and prepare them in SWAT or SWAT+ format.
 
-> **MapSWAT GEE**: This is the Connected to [Google Earth Engine (GEE)](https://earthengine.google.com/) version of MapSWAT. Users must first sign up for a GEE account and install the GEE plugin from the QGIS repository.
+> **MapSWAT GEE**: This is the Connected to [Google Earth Engine (GEE)](https://earthengine.google.com/) version of MapSWAT. Users must first sign up for a GEE account and install the GEE plugin from the QGIS repository. The first time you use this version, you will need to enter your **GEE Cloud Project ID**.
 
 2.  Before going to the selected MapSWAT version, users also have to indicate a path to save the MapSWAT folder.
 
@@ -169,12 +174,12 @@
 </p>  
 
 ## Future Developments
-- [ ] More DEM, LULC, and SOIL databases.
-- [ ] Global input maps require by GWFLOW.
+- [X] Global input maps require by GWFLOW **(already implemented in version 3.1 😉)**.
 - [ ] Extract climate data from GEE in SWAT/SWAT+ format.
 - [ ] Upload to the QGIS plugin repository.
+- [ ] More DEM, LULC, and SOIL databases **(looking for collaboration 👫 or ideas 💡)**.
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any suggestions you make are greatly appreciated.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. **Any suggestions you make are greatly appreciated**.
 
 ## Credits
 
