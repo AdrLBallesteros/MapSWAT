@@ -1,6 +1,6 @@
 [general]
 name=MapSWAT v3
-qgisMinimumVersion=3.1
+qgisMinimumVersion=3.22
 qgisMaximumVersion=3.99
 description= MapSWAT is a QGIS plugin for generating ready-to-use SWAT or SWAT+ input maps.	
 about=MapSWAT optimizes the process of obtaining and preparing the input maps for both QGIS versions of SWAT (Soil and Water Assessment Tool), QSWAT and QSWAT+. The SWAT model required: a digital elevation map (DEM), a land use map (LANDUSE) and a soil map (SOIL). Obtaining and pre-processing these SWAT input maps can be a laborious and time-consuming task. With MapSWAT, the necessary SWAT input maps can be obtained and formatted in less than one minute for any part of the world, substantially reducing the time spent to pre-process them, as well as excluding possible formatting errors.

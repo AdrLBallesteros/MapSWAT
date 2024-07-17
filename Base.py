@@ -3,7 +3,7 @@
 /***************************************************************************
  **MapSWAT
  **A QGIS plugin
- **Description: MapSWAT is a QGIS plugin for preparing QSWAT or QSWAT+ input maps.
+ **Description: MapSWAT is a QGIS plugin for preparing SWAT or SWAT+ input maps.
 ----------------------------------------------------
        begin                : **January-2021
         copyright            : **COPYRIGHT
@@ -27,24 +27,34 @@ from PyQt5.QtWidgets import QAction
 from .BaseDialog import BaseDialog
 import MapSWAT_v3.gui.generated.resources_rc
 
+
 class Base:
     def __init__(self, iface):
         self.iface = iface
 
     def initGui(self):
-        self.action = QAction(QIcon(":/imgMapSWAT/images/icon.png"), u"MapSWAT v3.0", self.iface.mainWindow())
+        self.action = QAction(
+            QIcon(":/imgMapSWAT/images/icon.png"),
+            "MapSWAT v3.0",
+            self.iface.mainWindow(),
+        )
         self.action.triggered.connect(self.run)
         self.iface.addToolBarIcon(self.action)
-        self.iface.addPluginToMenu(u"&MapSWAT v3.0", self.action)
+        self.iface.addPluginToMenu("&MapSWAT v3.0", self.action)
 
     def unload(self):
-        self.iface.removePluginMenu(u"&MapSWAT v3.0", self.action)
+        self.iface.removePluginMenu("&MapSWAT v3.0", self.action)
         self.iface.removeToolBarIcon(self.action)
 
     def run(self):
-        self.dlg = BaseDialog(self.iface)       
-        self.dlg.setWindowFlags(Qt.WindowSystemMenuHint | Qt.MSWindowsFixedSizeDialogHint | Qt.WindowTitleHint | Qt.WindowMinimizeButtonHint)
-        #self.dlg.show()
+        self.dlg = BaseDialog(self.iface)
+        self.dlg.setWindowFlags(
+            Qt.WindowSystemMenuHint
+            | Qt.MSWindowsFixedSizeDialogHint
+            | Qt.WindowTitleHint
+            | Qt.WindowMinimizeButtonHint
+        )
+        # self.dlg.show()
         self.dlg.SelectionWindow()
-        #self.dlg.InitialWindow()
+        # self.dlg.InitialWindow()
         # self.dlg.exec_()
