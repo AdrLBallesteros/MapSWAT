@@ -996,12 +996,12 @@
     <rect>
      <x>50</x>
      <y>180</y>
-     <width>91</width>
+     <width>191</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;GWFLOW&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;GWFLOW INPUTS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="textFormat">
     <enum>Qt::RichText</enum>
@@ -1010,7 +1010,7 @@
   <widget class="QPushButton" name="pushButton_infoMaps_5">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>200</x>
      <y>180</y>
      <width>31</width>
      <height>21</height>
@@ -1353,6 +1353,22 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_infoMaps_5</sender>
+   <signal>clicked()</signal>
+   <receiver>BaseDialog_GEE</receiver>
+   <slot>infoGWFLOW()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>raster()</slot>
@@ -1381,5 +1397,6 @@
   <slot>infoLanduse()</slot>
   <slot>infoSoil()</slot>
   <slot>infoAutobasin()</slot>
+  <slot>infoGWFLOW()</slot>
  </slots>
 </ui>
