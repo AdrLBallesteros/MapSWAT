@@ -8,3 +8,4 @@ __pycache__/
 .project
 .pydevproject
 *.bat
+GEE_project_ID.json

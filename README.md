@@ -19,6 +19,8 @@
   <a href="#support">Support</a>
 </p>
 
+<iframe width="700" height="315" src="https://www.youtube.com/embed/-OC30wQfmJw?si=oX5CkPpn4udFI4Dq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Why MapSWAT?
 
 * **MapSWAT** optimizes the process of obtaining and preparing the input maps for both QGIS versions of SWAT **(Soil and Water Assessment Tool)**, **QSWAT** and **QSWAT+**. As you know, the SWAT model required: a digital elevation map (DEM), a land use map (LANDUSE) and a soil map (SOIL). **Obtaining and pre-processing these SWAT input maps can be a laborious and time-consuming task**. With the **new version of MapSWAT**, the necessary **SWAT input maps can be obtained and formatted in less than one minute for any part of the world, substantially reducing the time spent to pre-process them, as well as  excluding possible formatting errors**. The MapSWAT plugin can be a useful tool for beginners or advanced SWAT users who wish to quickly and accurately obtain and prepare the SWAT input maps. This allows them to focus on other more important parts of the hydrological modelling, such as calibration and validation.
