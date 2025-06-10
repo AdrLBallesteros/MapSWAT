@@ -192,7 +192,7 @@ This software uses the following open source packages:
 
 ## Contact
 
-If you have feedback or suggestions, please contact me at **alopez6@ucam.edu**.
+If you have feedback or suggestions, please contact me at **alopbal@upv.es**.
 
 ## Support
 
