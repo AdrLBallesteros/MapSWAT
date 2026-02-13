@@ -7,7 +7,7 @@
 ----------------------------------------------------
        begin                : **January-2021
         copyright            : **COPYRIGHT
-        email                : **alopbal@upv.es
+        email                : **alopez6@ucam.edu
  ***************************************************************************/
 
 /***************************************************************************
@@ -650,6 +650,526 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
                 resolution = 100
                 resolution_ini = 100
                 json_path = os.path.join(self.plugin_dir, "resources/LULC_CORINE.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2024 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2024
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2023 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2023
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2022 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2022
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2021 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2021
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")   
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2020 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2020
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2019 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2019
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2018 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2018
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2017 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2017
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2016 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2016
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2015 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2015
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2014 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2014
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2013 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2013
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2012 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2012
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2011 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2011
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+            
+            if LULCfile == "MapBiomas Land Use and Land Cover 2010 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2010
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2009 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2009
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2008 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2008
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2007 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2007
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2006 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2006
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2005 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2005
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2004 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2004
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2003 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2003
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2002 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2002
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2001 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2001
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 2000 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 2000
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1999 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1999
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1998 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1998
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1997 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1997
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1996 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1996
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1995 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1995
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1994 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1994
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1993 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1993
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1992 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1992
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1991 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1991
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1990 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1990
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1989 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1989
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1988 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1988
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1987 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1987
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1986 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1986
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
+                
+            if LULCfile == "MapBiomas Land Use and Land Cover 1985 (only Brazil)":
+                assetPath = 'projects/mapbiomas-public/assets/brazil/lulc/v1'
+                year = 1985
+                LULC = ee.ImageCollection(assetPath) \
+                .filter(ee.Filter.eq('collection_id', 10.0)) \
+                .filter(ee.Filter.eq('version', 'v1')) \
+                .filter(ee.Filter.eq('year', year)) \
+                .first() \
+                .select('classification')
+                resolution = 100
+                resolution_ini = 30
+                json_path = os.path.join(self.plugin_dir, "resources/LULC_MAPBIOMAS.json")
 
             # Check the type of GEE object, if Geometry == True
             if isinstance(self.polygon, ee.geometry.Geometry):
@@ -1401,7 +1921,10 @@ class BaseDialog_GEE(QDialog, Ui_BaseDialog_GEE):
 
         if LULCfile == "Copernicus CORINE Land Cover 2018 (only Europe)":
             url = "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_CORINE_V20_100m"
-
+            
+        if LULCfile.startswith("MapBiomas Land Use and Land Cover") and "(only Brazil)" in LULCfile:
+            url = "https://developers.google.com/earth-engine/datasets/catalog/projects_mapbiomas-public_assets_brazil_lulc_v1"
+        
         webbrowser.open(url)
 
     def infoSoil(self):
